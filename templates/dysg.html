@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dysgraphia - SLD Test</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  
+  
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  
+</head>
+
+<body>
+
+      <form action="http://localhost:5000/submit-answer" method="POST">
+        <h1>Dysgraphia Test</h1>
+        <p><em>Uses an inset box shadow for the bordered effect on the  state.</em></p>
+        <br>
+        <h4>1. Does your child hold pencils, pens, crayons, or markers awkwardly?</h4>
+        <div>
+            <input id="radio-1" class="radio-custom" name="radio-group1" type="radio" onclick="setAnswer(1,1)">
+            <label for="radio-1" class="radio-custom-label">Yes</label>
+        </div>
+        <div>
+            <input id="radio-2" class="radio-custom"name="radio-group1" type="radio" onclick="setAnswer(1,0)">
+            <label for="radio-2" class="radio-custom-label">No</label>
+        </div>
+        <div>
+            <input id="radio-3" class="radio-custom" name="radio-group1" type="radio" onclick="setAnswer(1,2)">
+            <label for="radio-3" class="radio-custom-label">Sometimes</label>
+        </div>
+
+
+        <br>
+        <h4>2. Is your child’s handwriting illegible? Is it ever so bad that even she/he can’t read it?</h4>
+        <div>
+            <input id="radio-4" class="radio-custom" name="radio-group2" type="radio" onclick="setAnswer(2,1)">
+            <label for="radio-4" class="radio-custom-label">Yes</label>
+        </div>
+        <div>
+            <input id="radio-5" class="radio-custom"name="radio-group2" type="radio" onclick="setAnswer(2,0)">
+            <label for="radio-5" class="radio-custom-label">No</label>
+        </div>
+        <div>
+            <input id="radio-6" class="radio-custom" name="radio-group2" type="radio" onclick="setAnswer(2,2)">
+            <label for="radio-6" class="radio-custom-label">Sometimes</label>
+        </div>
+    
+  
+  
+    <br>
+    <h4>3. Does your child omit letters or word endings when writing quickly?</h4>
+    <div>
+        <input id="radio-7" class="radio-custom" name="radio-group3" type="radio" onclick="setAnswer(3,1)" >
+        <label for="radio-7" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-8" class="radio-custom"name="radio-group3" type="radio" onclick="setAnswer(3,0)">
+        <label for="radio-8" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-9" class="radio-custom" name="radio-group3" type="radio"onclick="setAnswer(3,2)">
+        <label for="radio-9" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>4. Does your child complain that writing or drawing hurts or makes his hand tired?</h4>
+    <div>
+        <input id="radio-10" class="radio-custom" name="radio-group4" type="radio" onclick="setAnswer(4,1)" >
+        <label for="radio-10" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-11" class="radio-custom"name="radio-group4" type="radio" onclick="setAnswer(4,0)">
+        <label for="radio-11" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-12" class="radio-custom" name="radio-group4" type="radio" onclick="setAnswer(4,2)">
+        <label for="radio-12" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>5. Does your child seem to have difficulty picking up small objects?</h4>
+    <div>
+        <input id="radio-13" class="radio-custom" name="radio-group5" type="radio" onclick="setAnswer(5,1)" >
+        <label for="radio-13" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-14" class="radio-custom"name="radio-group5" type="radio" onclick="setAnswer(5,0)">
+        <label for="radio-14" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-15" class="radio-custom" name="radio-group5" type="radio" onclick="setAnswer(5,2)">
+        <label for="radio-15" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>6. Does your child make excuses to try to get out of at-home writing assignments?</h4>
+    <div>
+        <input id="radio-16" class="radio-custom" name="radio-group6" type="radio" onclick="setAnswer(6,1)" >
+        <label for="radio-16" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-17" class="radio-custom"name="radio-group6" type="radio" onclick="setAnswer(6,0)">
+        <label for="radio-17" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-18" class="radio-custom" name="radio-group6" type="radio" onclick="setAnswer(6,2)">
+        <label for="radio-18" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>7. Does your child have trouble using scissors, buttoning clothes, or zipping zippers?</h4>
+    <div>
+        <input id="radio-19" class="radio-custom" name="radio-group7" type="radio" onclick="setAnswer(7,1)" >
+        <label for="radio-19" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-20" class="radio-custom"name="radio-group7" type="radio" onclick="setAnswer(7,0)">
+        <label for="radio-20" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-21" class="radio-custom" name="radio-group7" type="radio" onclick="setAnswer(7,2)">
+        <label for="radio-21" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>8. Does your child move in a way that does not appear fluid - do his/her opposite arms and hands ever seem to move out-of-sync with one another?</h4>
+    <div>
+        <input id="radio-22" class="radio-custom" name="radio-group8" type="radio" onclick="setAnswer(8,1)" >
+        <label for="radio-22" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-23" class="radio-custom"name="radio-group8" type="radio" onclick="setAnswer(8,0)">
+        <label for="radio-23" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-24" class="radio-custom" name="radio-group8" type="radio" onclick="setAnswer(8,2)">
+        <label for="radio-24" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>9. Does your child make spelling errors in common words when writing?</h4>
+    <div>
+        <input id="radio-25" class="radio-custom" name="radio-group9" type="radio" onclick="setAnswer(9,1)" >
+        <label for="radio-25" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-26" class="radio-custom"name="radio-group9" type="radio" onclick="setAnswer(9,0)">
+        <label for="radio-26" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-27" class="radio-custom" name="radio-group9" type="radio" onclick="setAnswer(9,2)">
+        <label for="radio-27" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>10. Does your child seem to avoid coloring or drawing?</h4>
+    <div>
+        <input id="radio-28" class="radio-custom" name="radio-group10" type="radio" onclick="setAnswer(10,1)" >
+        <label for="radio-28" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-29" class="radio-custom"name="radio-group10" type="radio" onclick="setAnswer(10,0)">
+        <label for="radio-29" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-30" class="radio-custom" name="radio-group10" type="radio" onclick="setAnswer(10,2)">
+        <label for="radio-30" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>11. Can your child talk confidently about what he knows, but resists writing it down?</h4>
+    <div>
+        <input id="radio-31" class="radio-custom" name="radio-group11" type="radio" onclick="setAnswer(11,1)" >
+        <label for="radio-31" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-32" class="radio-custom"name="radio-group11" type="radio" onclick="setAnswer(11,0)">
+        <label for="radio-32" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-33" class="radio-custom" name="radio-group11" type="radio" onclick="setAnswer(11,2)">
+        <label for="radio-33" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>12. Is your child restless when writing — jumping out of his/her seat or asking to be excused?</h4>
+    <div>
+        <input id="radio-34" class="radio-custom" name="radio-group12" type="radio" onclick="setAnswer(12,1)" >
+        <label for="radio-34" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-35" class="radio-custom"name="radio-group12" type="radio" onclick="setAnswer(12,0)">
+        <label for="radio-35" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-36" class="radio-custom" name="radio-group12" type="radio" onclick="setAnswer(12,2)">
+        <label for="radio-36" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>13. Does your child use a random assortment of letter sizes, line spaces, spaces between words, or print and cursive?</h4>
+    <div>
+        <input id="radio-37" class="radio-custom" name="radio-group13" type="radio" onclick="setAnswer(13,1)" >
+        <label for="radio-37" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-38" class="radio-custom"name="radio-group13" type="radio" onclick="setAnswer(13,0)">
+        <label for="radio-38" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-39" class="radio-custom" name="radio-group13" type="radio" onclick="setAnswer(13,2)">
+        <label for="radio-39" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>14. Does your child have difficulty following the rules of grammar when writing — but not when speaking?</h4>
+    <div>
+        <input id="radio-40" class="radio-custom" name="radio-group14" type="radio" onclick="setAnswer(14,1)" >
+        <label for="radio-40" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-41" class="radio-custom"name="radio-group14" type="radio" onclick="setAnswer(14,0)">
+        <label for="radio-41" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-42" class="radio-custom" name="radio-group14" type="radio" onclick="setAnswer(14,2)">
+        <label for="radio-42" class="radio-custom-label">Sometimes</label>
+    </div>
+
+
+    <br>
+    <h4>15. Does your child leave out criticafl facts or details when writing?</h4>
+    <div>
+        <input id="radio-43" class="radio-custom" name="radio-group15" type="radio" onclick="setAnswer(15,1)" >
+        <label for="radio-43" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-44" class="radio-custom"name="radio-group15" type="radio" onclick="setAnswer(15,0)">
+        <label for="radio-44" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-45" class="radio-custom" name="radio-group15" type="radio" onclick="setAnswer(15,2)">
+        <label for="radio-45" class="radio-custom-label">Sometimes</label>
+    </div>
+<br><br><br>
+<div>
+    <button class="btn" type="submit" value="submit">Submit</button>
+</div>
+</form>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/dysg.js') }}"></script>
+</html>

@@ -1,0 +1,274 @@
+/* only demo styles */
+
+body {
+    color:white;
+    margin: 100px 250px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, rgb(71, 25, 177) 0%, rgb(200, 71, 204) 100%);
+}
+
+/* end only demo styles */
+
+.checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    background: rebeccapurple;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: rgb(99, 99, 99);
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd; /* focus style */
+}
+
+.btn {
+    
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    }
+  
+  .btn:hover {
+    background-color: #ff5722;
+        box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+ 
+  
+  .container {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  
+  /* Common style */
+  .row {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    display: block;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .row .box:last-child{
+    margin-right: 0;
+  }
+  
+  .box figure {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+  }
+  
+  .box figure .image {
+      position: relative;
+      display: block;
+  }
+  
+  .box figure figcaption {
+      padding: ;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+  }
+  
+  .box figure figcaption::before,
+  .box figure figcaption::after {
+      pointer-events: none;
+  }
+  
+  .box figure figcaption,
+  .box figure a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .box figure a {
+      z-index: 1000;
+      text-indent: 200%;
+      white-space: nowrap;
+      font-size: 0;
+      opacity: 0;
+  }
+  
+  .box figure h3 {
+      word-spacing: -0.15em;
+      font-weight: 300;
+  }
+  
+  .box figure h3 span {
+      font-weight: 800;
+  }
+  
+  .box figure h3,
+  .box figure p {
+      margin: 0;
+  }
+  
+  .box figure p {
+      letter-spacing: 1px;
+      font-size: 68.5%;
+    color: #000;
+  }
+  
+  .card {
+    margin: 0;
+    width: 300px;
+    height: 370px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.22);
+  }
+  
+  .image1{
+    background-image: url("../img/dys.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  .image2{
+    background-image: url("../img/adp.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  .image3{
+    background-image: url("../img/gad.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .block {
+    height: 70px;
+  }
+  
+  /* Individual effects */
+  
+  /*---------------*/
+  /******* Ex1 *****/
+  /*---------------*/
+  
+  .card.ex1 .image::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+      content: '';
+      opacity: 0;
+      transform: translate3d(0,0,0);
+  }
+  .card.ex1 figcaption::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      opacity: 0;
+      transform: translate3d(0,50%,0);
+  }
+  
+  .card.ex1 h3 {
+      position: absolute;
+      top: 90%;
+      left: 0;
+      width: 100%;
+      color: #484c61;
+      transition: transform 0.35s, color 0.35s;
+      transform: translate3d(0,-50%,0);
+  }
+  
+  .card.ex1 figcaption::before,
+  .card.ex1 .image::before,
+  .card.ex1 p {
+      transition: opacity 0.35s, transform 0.35s;
+  }
+  
+  .card.ex1 p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 17px;
+    width: 266px;
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+  }
+  
+  .card.ex1:hover h3 {
+      color: #fff;
+      transform: translate3d(0,-255%,0) translate3d(0,-40px,0);
+  }
+  
+  .card.ex1:hover figcaption::before ,
+  .card.ex1:hover .image::before,
+  .card.ex1:hover p {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+  }
+  
+  

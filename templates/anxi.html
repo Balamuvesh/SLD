@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>GAD - SLD Test</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  
+  
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  
+</head>
+
+<body>
+      <form action="http://localhost:5000/submit-answer" method="POST">
+        <h1>Generalized Anxiety Disorder Test</h1>
+        <p><em>Uses an inset box shadow for the bordered effect on the  state.</em></p>
+        <br>
+        <h4>1. When you are all at home for the day, does your child follow you around the house wherever you go?</h4>
+        <div>
+            <input id="radio-1" class="radio-custom" name="radio-group1" type="radio" >
+            <label for="radio-1" class="radio-custom-label">Yes</label>
+        </div>
+        <div>
+            <input id="radio-2" class="radio-custom"name="radio-group1" type="radio">
+            <label for="radio-2" class="radio-custom-label">No</label>
+        </div>
+        <div>
+            <input id="radio-3" class="radio-custom" name="radio-group1" type="radio">
+            <label for="radio-3" class="radio-custom-label">Sometimes</label>
+        </div>
+
+
+        <br>
+        <h4>2. Does your child often come home sick from school with a stomach ache or headache?</h4>
+        <div>
+            <input id="radio-4" class="radio-custom" name="radio-group2" type="radio" >
+            <label for="radio-4" class="radio-custom-label">Yes</label>
+        </div>
+        <div>
+            <input id="radio-5" class="radio-custom"name="radio-group2" type="radio">
+            <label for="radio-5" class="radio-custom-label">No</label>
+        </div>
+        <div>
+            <input id="radio-6" class="radio-custom" name="radio-group2" type="radio">
+            <label for="radio-6" class="radio-custom-label">Sometimes</label>
+        </div>
+    
+  
+  
+    <br>
+    <h4>3. Is your child easily fatigued and/or complain of sore muscles?</h4>
+    <div>
+        <input id="radio-7" class="radio-custom" name="radio-group3" type="radio" >
+        <label for="radio-7" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-8" class="radio-custom"name="radio-group3" type="radio">
+        <label for="radio-8" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-9" class="radio-custom" name="radio-group3" type="radio">
+        <label for="radio-9" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>4. Has your child ever gotten so scared that she/he says it’s hard to breathe?</h4>
+    <div>
+        <input id="radio-10" class="radio-custom" name="radio-group4" type="radio" >
+        <label for="radio-10" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-11" class="radio-custom"name="radio-group4" type="radio">
+        <label for="radio-11" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-12" class="radio-custom" name="radio-group4" type="radio">
+        <label for="radio-12" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>5. At birthday parties, does your child feel nervous if left with people he/she doesn’t know very well?</h4>
+    <div>
+        <input id="radio-13" class="radio-custom" name="radio-group5" type="radio" >
+        <label for="radio-13" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-14" class="radio-custom"name="radio-group5" type="radio">
+        <label for="radio-14" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-15" class="radio-custom" name="radio-group5" type="radio">
+        <label for="radio-15" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>6. Are you woken frequently in the night because your child had another nightmare about something bad happening to you?</h4>
+    <div>
+        <input id="radio-16" class="radio-custom" name="radio-group6" type="radio" >
+        <label for="radio-16" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-17" class="radio-custom"name="radio-group6" type="radio">
+        <label for="radio-17" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-18" class="radio-custom" name="radio-group6" type="radio">
+        <label for="radio-18" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>7. Does your child change clothes several times a day because they sweats a lot when they are nervous?</h4>
+    <div>
+        <input id="radio-19" class="radio-custom" name="radio-group7" type="radio" >
+        <label for="radio-19" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-20" class="radio-custom"name="radio-group7" type="radio">
+        <label for="radio-20" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-21" class="radio-custom" name="radio-group7" type="radio">
+        <label for="radio-21" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>8. Is your child scared to get on the bus and go to school every day?</h4>
+    <div>
+        <input id="radio-22" class="radio-custom" name="radio-group8" type="radio" >
+        <label for="radio-22" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-23" class="radio-custom"name="radio-group8" type="radio">
+        <label for="radio-23" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-24" class="radio-custom" name="radio-group8" type="radio">
+        <label for="radio-24" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>9. Does your child expect the worst, even when there is no justification for worry?</h4>
+    <div>
+        <input id="radio-25" class="radio-custom" name="radio-group9" type="radio" >
+        <label for="radio-25" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-26" class="radio-custom"name="radio-group9" type="radio">
+        <label for="radio-26" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-27" class="radio-custom" name="radio-group9" type="radio">
+        <label for="radio-27" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>10. Even when you are upstairs and your child is in the basement, does she/he get scared about being alone in the house?</h4>
+    <div>
+        <input id="radio-28" class="radio-custom" name="radio-group10" type="radio" >
+        <label for="radio-28" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-29" class="radio-custom"name="radio-group10" type="radio">
+        <label for="radio-29" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-30" class="radio-custom" name="radio-group10" type="radio">
+        <label for="radio-30" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>11. Does your child fill her bed with stuffed animals and the family pet because she/he is too nervous to sleep alone?</h4>
+    <div>
+        <input id="radio-31" class="radio-custom" name="radio-group11" type="radio" >
+        <label for="radio-31" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-32" class="radio-custom"name="radio-group11" type="radio">
+        <label for="radio-32" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-33" class="radio-custom" name="radio-group11" type="radio">
+        <label for="radio-33" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>12. Has your child come home from a slumber party because he/she’s too scared to sleep away from home?</h4>
+    <div>
+        <input id="radio-34" class="radio-custom" name="radio-group12" type="radio" >
+        <label for="radio-34" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-35" class="radio-custom"name="radio-group12" type="radio">
+        <label for="radio-35" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-36" class="radio-custom" name="radio-group12" type="radio">
+        <label for="radio-36" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>13. Have teachers mentioned that your child seems nervous working in groups or speaking in class?</h4>
+    <div>
+        <input id="radio-37" class="radio-custom" name="radio-group13" type="radio" >
+        <label for="radio-37" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-38" class="radio-custom"name="radio-group13" type="radio">
+        <label for="radio-38" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-39" class="radio-custom" name="radio-group13" type="radio">
+        <label for="radio-39" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>14. After school, does your child spend an excessive amount of time doing and redoing homework worksheets because he doesn’t want anything to be less than perfect?</h4>
+    <div>
+        <input id="radio-40" class="radio-custom" name="radio-group14" type="radio" >
+        <label for="radio-40" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-41" class="radio-custom"name="radio-group14" type="radio">
+        <label for="radio-41" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-42" class="radio-custom" name="radio-group14" type="radio">
+        <label for="radio-42" class="radio-custom-label">Sometimes</label>
+    </div>
+
+
+    <br>
+    <h4>15. Is your child irrationally afraid of flying in an airplane, or of a certain animal?</h4>
+    <div>
+        <input id="radio-43" class="radio-custom" name="radio-group15" type="radio" >
+        <label for="radio-43" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-44" class="radio-custom"name="radio-group15" type="radio">
+        <label for="radio-44" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-45" class="radio-custom" name="radio-group15" type="radio">
+        <label for="radio-45" class="radio-custom-label">Sometimes</label>
+    </div>
+
+
+    <br>
+    <h4>16. Does your child tremble when she’s in crowded places like the shopping mall or a busy playground?</h4>
+    <div>
+        <input id="radio-46" class="radio-custom" name="radio-group16" type="radio" >
+        <label for="radio-46" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-47" class="radio-custom"name="radio-group16" type="radio">
+        <label for="radio-47" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-48" class="radio-custom" name="radio-group16" type="radio">
+        <label for="radio-48" class="radio-custom-label">Sometimes</label>
+    </div>
+
+
+    <br>
+    <h4>17. Does your child require constant approval and reassurance that he/she has done a good job?</h4>
+    <div>
+        <input id="radio-49" class="radio-custom" name="radio-group17" type="radio" >
+        <label for="radio-49" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-50" class="radio-custom"name="radio-group17" type="radio">
+        <label for="radio-50" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-51" class="radio-custom" name="radio-group17" type="radio">
+        <label for="radio-51" class="radio-custom-label">Sometimes</label>
+    </div>
+
+</form>
+<br><br><br>
+<div>
+    <button class="btn" onclick="submitAnswer()">Submit</button>
+</div>
+
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/anxi.js') }}"></script>
+</html>

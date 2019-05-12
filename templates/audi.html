@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ADP - SLD Test</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  
+  
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  
+</head>
+
+<body>
+
+      <form action="http://localhost:5000/submit-answer" method="POST">
+        <h1>Auditory Processing Disorder Test</h1>
+        <p><em>Uses an inset box shadow for the bordered effect on the  state.</em></p>
+        <br>
+        <h4>1. My child cries, covers his/her ears, or runs away when I turn on the vacuum cleaner.</h4>
+        <div>
+            <input id="radio-1" class="radio-custom" name="radio-group1" type="radio" value="1" >
+            <label for="radio-1" class="radio-custom-label">Yes</label>
+        </div>
+        <div>
+            <input id="radio-2" class="radio-custom"name="radio-group1" type="radio">
+            <label for="radio-2" class="radio-custom-label">No</label>
+        </div>
+        <div>
+            <input id="radio-3" class="radio-custom" name="radio-group1" type="radio">
+            <label for="radio-3" class="radio-custom-label">Sometimes</label>
+        </div>
+
+
+        <br>
+        <h4>2. My child gets upset if anyone talks while we’re watching TV, even at a very low volume or during a commercial.</h4>
+        <div>
+            <input id="radio-4" class="radio-custom" name="radio-group2" type="radio" >
+            <label for="radio-4" class="radio-custom-label">Yes</label>
+        </div>
+        <div>
+            <input id="radio-5" class="radio-custom"name="radio-group2" type="radio">
+            <label for="radio-5" class="radio-custom-label">No</label>
+        </div>
+        <div>
+            <input id="radio-6" class="radio-custom" name="radio-group2" type="radio">
+            <label for="radio-6" class="radio-custom-label">Sometimes</label>
+        </div>
+    
+  
+  
+    <br>
+    <h4>3. My child can’t focus on his homework if he can hear someone talking or playing in another room.</h4>
+    <div>
+        <input id="radio-7" class="radio-custom" name="radio-group3" type="radio" >
+        <label for="radio-7" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-8" class="radio-custom"name="radio-group3" type="radio">
+        <label for="radio-8" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-9" class="radio-custom" name="radio-group3" type="radio">
+        <label for="radio-9" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>4. If I tell my child, “Go to your room and get your shoe.” she’ll go to his/her room and come back without his/her shoe.</h4>
+    <div>
+        <input id="radio-10" class="radio-custom" name="radio-group4" type="radio" >
+        <label for="radio-10" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-11" class="radio-custom"name="radio-group4" type="radio">
+        <label for="radio-11" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-12" class="radio-custom" name="radio-group4" type="radio">
+        <label for="radio-12" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>5. My child seems disinterested in music.</h4>
+    <div>
+        <input id="radio-13" class="radio-custom" name="radio-group5" type="radio" >
+        <label for="radio-13" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-14" class="radio-custom"name="radio-group5" type="radio">
+        <label for="radio-14" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-15" class="radio-custom" name="radio-group5" type="radio">
+        <label for="radio-15" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>6. My child gets stressed out when talking on the telephone — or even thinking about it</h4>
+    <div>
+        <input id="radio-16" class="radio-custom" name="radio-group6" type="radio" >
+        <label for="radio-16" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-17" class="radio-custom"name="radio-group6" type="radio">
+        <label for="radio-17" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-18" class="radio-custom" name="radio-group6" type="radio">
+        <label for="radio-18" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>7. My child can’t focus on writing and listening at the same time, and has difficulty taking notes.</h4>
+    <div>
+        <input id="radio-19" class="radio-custom" name="radio-group7" type="radio" >
+        <label for="radio-19" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-20" class="radio-custom"name="radio-group7" type="radio">
+        <label for="radio-20" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-21" class="radio-custom" name="radio-group7" type="radio">
+        <label for="radio-21" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>8. My child has been tested for hearing problems, and everything came out fine.</h4>
+    <div>
+        <input id="radio-22" class="radio-custom" name="radio-group8" type="radio" >
+        <label for="radio-22" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-23" class="radio-custom"name="radio-group8" type="radio">
+        <label for="radio-23" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-24" class="radio-custom" name="radio-group8" type="radio">
+        <label for="radio-24" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>9. My child often says, “What?” even if no one is talking.</h4>
+    <div>
+        <input id="radio-25" class="radio-custom" name="radio-group9" type="radio" >
+        <label for="radio-25" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-26" class="radio-custom"name="radio-group9" type="radio">
+        <label for="radio-26" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-27" class="radio-custom" name="radio-group9" type="radio">
+        <label for="radio-27" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>10. My child mishears me when I’m speaking; he thinks I said “bread” instead of “red”, for example.</h4>
+    <div>
+        <input id="radio-28" class="radio-custom" name="radio-group10" type="radio" >
+        <label for="radio-28" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-29" class="radio-custom"name="radio-group10" type="radio">
+        <label for="radio-29" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-30" class="radio-custom" name="radio-group10" type="radio">
+        <label for="radio-30" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>11. My child often says sounds in the wrong order, long after his peers have stopped doing this.</h4>
+    <div>
+        <input id="radio-31" class="radio-custom" name="radio-group11" type="radio" >
+        <label for="radio-31" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-32" class="radio-custom"name="radio-group11" type="radio">
+        <label for="radio-32" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-33" class="radio-custom" name="radio-group11" type="radio">
+        <label for="radio-33" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>12. My child seems distracted or has trouble focusing during class.</h4>
+    <div>
+        <input id="radio-34" class="radio-custom" name="radio-group12" type="radio" >
+        <label for="radio-34" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-35" class="radio-custom"name="radio-group12" type="radio">
+        <label for="radio-35" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-36" class="radio-custom" name="radio-group12" type="radio">
+        <label for="radio-36" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>13. My child does poorly on oral tests but not written ones.</h4>
+    <div>
+        <input id="radio-37" class="radio-custom" name="radio-group13" type="radio" >
+        <label for="radio-37" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-38" class="radio-custom"name="radio-group13" type="radio">
+        <label for="radio-38" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-39" class="radio-custom" name="radio-group13" type="radio">
+        <label for="radio-39" class="radio-custom-label">Sometimes</label>
+    </div>
+        
+  
+  
+    <br>
+    <h4>14. My child has difficulty listening to auditory information (teacher teaching) when no visual information is available.</h4>
+    <div>
+        <input id="radio-40" class="radio-custom" name="radio-group14" type="radio" >
+        <label for="radio-40" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-41" class="radio-custom"name="radio-group14" type="radio">
+        <label for="radio-41" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-42" class="radio-custom" name="radio-group14" type="radio">
+        <label for="radio-42" class="radio-custom-label">Sometimes</label>
+    </div>
+
+
+    <br>
+    <h4>15. Startled or distracted by loud or unexpected sounds.</h4>
+    <div>
+        <input id="radio-43" class="radio-custom" name="radio-group15" type="radio" >
+        <label for="radio-43" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-44" class="radio-custom"name="radio-group15" type="radio">
+        <label for="radio-44" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-45" class="radio-custom" name="radio-group15" type="radio">
+        <label for="radio-45" class="radio-custom-label">Sometimes</label>
+    </div>
+
+
+    <br><h4>16. Distracted by sounds not normally noticed by others; i.e., humming of lights or refrigerators, fans, heaters, or clocks ticking.</h4>
+    <div>
+        <input id="radio-46" class="radio-custom" name="radio-group16" type="radio" >
+        <label for="radio-46" class="radio-custom-label">Yes</label>
+    </div>
+    <div>
+        <input id="radio-47" class="radio-custom"name="radio-group16" type="radio">
+        <label for="radio-47" class="radio-custom-label">No</label>
+    </div>
+    <div>
+        <input id="radio-48" class="radio-custom" name="radio-group16" type="radio">
+        <label for="radio-48" class="radio-custom-label">Sometimes</label>
+    </div>
+
+</form>
+<br><br><br>
+<div>
+    <input type="submit" class="btn">Submit</button>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/audi.js') }}"></script>
+</body>
+
+</html>
